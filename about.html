@@ -12,39 +12,73 @@
   <body>
     <!-- header for navbar bootstrap -->
     <div class="container my-5">
-      <h1>Sedong Hwang</h1>
-      <p class="lead mt-2">
-        Programming Languages, Full-Stack Development, Algorithms & Data Structures
-      </p>
+      <div class="row g-5">
+        <div class="col">
+          <h1>Sedong Hwang</h1>
+          <p class="lead mt-2">
+            Programming Languages, Full-Stack Development, Algorithms & Data Structures
+          </p>
+          <!-- navigation -->
+          <div class="container mt-4">
+            <nav>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/my-portfolio/about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://github.com/nanotart">Github</a>
+                </li>
+                
+                <!-- modal as a placeholder -->
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    projects
+                  </button>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Projects</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">coming soon!</a></li>
+                    <li><a class="dropdown-item" href="#">this website is still fairly new</a></li>
+                    <li><a class="dropdown-item" href="#">sorry for the wait</a></li>
+                    <li><a class="dropdown-item" href="#">he'll get back to it</a></li>
+                  </ul>
+                </li> -->
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/my-portfolio/contact.html">Contact Me</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-end">
+            <img src="images/corgi.png" style="max-width:35%" class="img-responsive" alt="corgi">
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- navigation -->
-    <div class="container">
-      <nav>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="/my-portfolio/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/nanotart">Github</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Projects</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">P1</a></li>
-              <li><a class="dropdown-item" href="#">P2</a></li>
-              <li><a class="dropdown-item" href="#">P3</a></li>
-              <li><a class="dropdown-item" href="#">P4</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/my-portfolio/contact.html">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Projects Section</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Hi, this website is still fairly new. Sorry for the wait, this part will be updated soon!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- body for about me page -->
